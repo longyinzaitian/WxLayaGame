@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+bin/*
+bin
+libs/*
+libs
+.laya/chrome/*
+.laya/release/*
