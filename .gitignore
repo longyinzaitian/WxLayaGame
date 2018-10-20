@@ -3,7 +3,6 @@ dist
 .DS_Store
 !bin/index.html
 bin/*
-bin
 libs/*
 libs
 .laya/chrome/*
