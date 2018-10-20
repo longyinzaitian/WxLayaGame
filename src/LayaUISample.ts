@@ -29,6 +29,8 @@ class GameMain {
 						 "bones/Sheep_Ani.png"];
 		Laya.loader.load(resources, Laya.Handler.create(this, this.onLoaded));
 		Laya.loader.load("bones/Sheep_Ani.sk",null,null,Loader.BUFFER);
+
+		new StateMachineUtil();
 	}
 
 	private registerVisibleChange(): void {
