@@ -2,7 +2,7 @@ node_modules
 dist
 .DS_Store
 bin/*
-bin
+!bin/index.html
 libs/*
 libs
 .laya/chrome/*

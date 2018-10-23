@@ -1,5 +1,3 @@
-import test = ui.test.TestPageUI;
-
 import Loader = Laya.Loader;
 import WebGL = Laya.WebGL;
 
@@ -30,8 +28,10 @@ class GameMain {
 						 "res/atlas/second.atlas",
 						 "res/atlas/roundpro.atlas",
 						 "bones/Sheep_Ani.png"];
-		Laya.loader.load(resources, Handler.create(this, this.onLoaded));
+		Laya.loader.load(resources, Laya.Handler.create(this, this.onLoaded));
 		Laya.loader.load("bones/Sheep_Ani.sk",null,null,Loader.BUFFER);
+
+		new StateMachineUtil();
 	}
 
 	private registerVisibleChange(): void {
