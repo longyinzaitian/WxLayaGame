@@ -27,6 +27,24 @@ module ui.test {
 }
 
 module ui.test {
+    export class ExpandPageUI extends View {
+		public mUiAddScriptBox:Laya.Box;
+		public mRegByCodeBox:Laya.Box;
+
+        public static  uiView:any ={"type":"View","props":{"width":750,"height":1334},"child":[{"type":"Image","props":{"top":0,"skin":"second/bg.jpg","right":0,"left":0,"bottom":0}},{"type":"Box","props":{"var":"mUiAddScriptBox","centerY":0,"centerX":0},"child":[{"type":"Label","props":{"y":-72,"text":"9999999","name":"userN","fontSize":35,"color":"#d41815","centerX":0}},{"type":"Image","props":{"skin":"comp/image.png","centerX":0}},{"type":"Script","props":{"y":-542,"x":-268,"userName":"非官方吹牛皮(UI添加)","speed":9,"runtime":"script.GameScript"}}]},{"type":"Box","props":{"var":"mRegByCodeBox","centerY":407,"centerX":0},"child":[{"type":"Label","props":{"y":-72,"text":"9999999","name":"userN","fontSize":35,"color":"#d41815","centerX":0}},{"type":"Image","props":{"skin":"comp/image.png","centerX":0}}]}]};
+        constructor(){ super()}
+        createChildren():void {
+        			View.regComponent("script.GameScript",script.GameScript);
+
+            super.createChildren();
+            this.createView(ui.test.ExpandPageUI.uiView);
+
+        }
+
+    }
+}
+
+module ui.test {
     export class HumanViewUI extends View {
 		public img:Laya.Image;
 
@@ -48,8 +66,9 @@ module ui.test {
 		public mTestBtn:Laya.Label;
 		public mRecordBtn:Laya.Label;
 		public mRoundCirclePage:Laya.Label;
+		public mExpandBtn:Laya.Label;
 
-        public static  uiView:any ={"type":"View","props":{"y":0,"width":750,"layoutEnabled":true,"height":1334},"child":[{"type":"Box","props":{"top":500,"layoutEnabled":true,"centerX":0},"child":[{"type":"Label","props":{"y":0,"x":0,"var":"mBonesBtn","text":"龙骨页面","fontSize":35}},{"type":"Label","props":{"y":69,"var":"mTestBtn","text":"测试页面","layoutEnabled":true,"fontSize":35,"centerX":0}},{"type":"Label","props":{"y":150,"x":3,"var":"mRecordBtn","text":"录音界面","layoutEnabled":true,"fontSize":35,"centerX":3}},{"type":"Label","props":{"y":221,"var":"mRoundCirclePage","text":"圆形进度条界面","layoutEnabled":true,"fontSize":35,"centerX":0}}]}]};
+        public static  uiView:any ={"type":"View","props":{"y":0,"width":750,"layoutEnabled":true,"height":1334},"child":[{"type":"Box","props":{"top":500,"layoutEnabled":true,"centerX":0},"child":[{"type":"Label","props":{"y":0,"x":0,"var":"mBonesBtn","text":"龙骨页面","fontSize":35}},{"type":"Label","props":{"y":69,"var":"mTestBtn","text":"测试页面","layoutEnabled":true,"fontSize":35,"centerX":0}},{"type":"Label","props":{"y":150,"x":3,"var":"mRecordBtn","text":"录音界面","layoutEnabled":true,"fontSize":35,"centerX":3}},{"type":"Label","props":{"y":221,"var":"mRoundCirclePage","text":"圆形进度条界面","layoutEnabled":true,"fontSize":35,"centerX":0}},{"type":"Label","props":{"y":283,"var":"mExpandBtn","text":"扩展脚本使用","layoutEnabled":true,"fontSize":35,"centerX":0}}]}]};
         constructor(){ super()}
         createChildren():void {
         

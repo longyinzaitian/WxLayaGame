@@ -9,6 +9,7 @@ class GameMain {
 	public static bonesPage: BonesPageUI;
 	public static recordPage: RecordPageUI;
 	public static roundCirclePage: RoundCirclePage;
+	public static expandPage: ExpandPage;
 
 	constructor() {
 		//初始化微信小游戏

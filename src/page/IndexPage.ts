@@ -30,6 +30,13 @@ class IndexPage extends ui.test.IndexPageUI {
             }
             Laya.stage.addChild(GameMain.roundCirclePage);
         });
+
+        this.mExpandBtn.on(Laya.Event.CLICK, this, function() {
+            if (!GameMain.expandPage) {
+                GameMain.expandPage = new ExpandPage();
+            }
+            Laya.stage.addChild(GameMain.expandPage);
+        });
     }
 
 }
