@@ -2,7 +2,6 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":1,
     "props":{"width":750,"sceneColor":"#ffffff","layoutEnabled":true,"height":1334},
     "nodeParent":-1,
     "label":"View",
@@ -122,14 +121,13 @@
                     "props":{"y":0,"x":0,"width":112,"name":"render","height":30},
                     "nodeParent":19,
                     "label":"Box(render)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":false,
                     "hasChild":true,
                     "compId":30,
                     "child":[
                         {
-                            "x":45,
                             "type":"Label",
                             "props":{"y":5,"x":26,"width":78,"text":"this is a list","skin":"comp/label.png","name":"label","height":20,"fontSize":14},
                             "nodeParent":30,
@@ -142,7 +140,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Clip",
                             "props":{"y":2,"x":0,"skin":"comp/clip_num.png","name":"clip","clipX":10},
                             "nodeParent":30,

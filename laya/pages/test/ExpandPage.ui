@@ -1,7 +1,7 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":2,
+    "selectedBox":1,
     "selecteID":12,
     "props":{"width":750,"sceneColor":"#000000","height":1334},
     "nodeParent":-1,
@@ -68,7 +68,7 @@
                     "x":30,
                     "type":"Script",
                     "source":"laya/pages/GameScript.script",
-                    "props":{"y":-542,"x":-268,"userName":"非官方吹牛皮(UI添加)","speed":9},
+                    "props":{"y":-542,"x":-268,"userName":"非官方吹牛皮(扩展脚本 -》UI添加)","speed":9},
                     "nodeParent":2,
                     "label":"GameScript",
                     "isDirectory":false,
@@ -117,6 +117,19 @@
                     "child":[
                         ]
                 }]
+        },
+        {
+            "x":15,
+            "type":"Button",
+            "props":{"width":84,"var":"mClose","top":0,"skin":"comp/btn_close.png","right":0,"height":60},
+            "nodeParent":1,
+            "label":"Button(mClose)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":13,
+            "child":[
+                ]
         }],
     "animations":[
         {

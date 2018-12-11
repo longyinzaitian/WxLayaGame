@@ -30,8 +30,9 @@ module ui.test {
     export class ExpandPageUI extends View {
 		public mUiAddScriptBox:Laya.Box;
 		public mRegByCodeBox:Laya.Box;
+		public mClose:Laya.Button;
 
-        public static  uiView:any ={"type":"View","props":{"width":750,"height":1334},"child":[{"type":"Image","props":{"top":0,"skin":"second/bg.jpg","right":0,"left":0,"bottom":0}},{"type":"Box","props":{"var":"mUiAddScriptBox","centerY":0,"centerX":0},"child":[{"type":"Label","props":{"y":-72,"text":"9999999","name":"userN","fontSize":35,"color":"#d41815","centerX":0}},{"type":"Image","props":{"skin":"comp/image.png","centerX":0}},{"type":"Script","props":{"y":-542,"x":-268,"userName":"非官方吹牛皮(UI添加)","speed":9,"runtime":"script.GameScript"}}]},{"type":"Box","props":{"var":"mRegByCodeBox","centerY":407,"centerX":0},"child":[{"type":"Label","props":{"y":-72,"text":"9999999","name":"userN","fontSize":35,"color":"#d41815","centerX":0}},{"type":"Image","props":{"skin":"comp/image.png","centerX":0}}]}]};
+        public static  uiView:any ={"type":"View","props":{"width":750,"height":1334},"child":[{"type":"Image","props":{"top":0,"skin":"second/bg.jpg","right":0,"left":0,"bottom":0}},{"type":"Box","props":{"var":"mUiAddScriptBox","centerY":0,"centerX":0},"child":[{"type":"Label","props":{"y":-72,"text":"9999999","name":"userN","fontSize":35,"color":"#d41815","centerX":0}},{"type":"Image","props":{"skin":"comp/image.png","centerX":0}},{"type":"Script","props":{"y":-542,"x":-268,"userName":"非官方吹牛皮(扩展脚本 -》UI添加)","speed":9,"runtime":"script.GameScript"}}]},{"type":"Box","props":{"var":"mRegByCodeBox","centerY":407,"centerX":0},"child":[{"type":"Label","props":{"y":-72,"text":"9999999","name":"userN","fontSize":35,"color":"#d41815","centerX":0}},{"type":"Image","props":{"skin":"comp/image.png","centerX":0}}]},{"type":"Button","props":{"width":84,"var":"mClose","top":0,"skin":"comp/btn_close.png","right":0,"height":60}}]};
         constructor(){ super()}
         createChildren():void {
         			View.regComponent("script.GameScript",script.GameScript);
