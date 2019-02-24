@@ -6,5 +6,6 @@ bin/*
 !bin/state-machine.min.js
 libs/*
 libs
+!libs/Wx.d.ts
 .laya/chrome/*
 .laya/release/*

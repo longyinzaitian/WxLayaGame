@@ -2,7 +2,10 @@ class StateMachineUtil {
     
     constructor() {
         console.log('main -> state machine:', StateMachine);
+        this.init();
+    }
 
+    private init(): void {
         let fsm = new StateMachine({
             init: 'green',
             transitions: [
