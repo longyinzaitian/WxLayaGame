@@ -15,8 +15,8 @@
 4、微信录音接口调用  
   
 5、引入第三方库。（项目中引入state-machine.min.js.）  
-   只需在编译后的game.js中StateMachine = require('state-machine.min.js')即可使用。 同理可使用任何第三方库）   
-   具体操作，请参考博客：https://blog.csdn.net/u010156024/article/details/87906106
+>   只需在编译后的game.js中StateMachine = require('state-machine.min.js')即可使用。 同理可使用任何第三方库）   
+>   具体操作，请参考博客：https://blog.csdn.net/u010156024/article/details/87906106
 
 
 ### 环境  
