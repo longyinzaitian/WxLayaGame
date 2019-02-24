@@ -120,7 +120,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"width":65,"var":"mClose","top":0,"skin":"comp/btn_close.png","right":0,"height":65},
+            "props":{"width":120,"var":"mClose","top":0,"stateNum":"3","skin":"comp/btn_close.png","left":0,"height":88},
             "nodeParent":1,
             "label":"Button(mClose)",
             "isDirectory":false,

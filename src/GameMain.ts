@@ -14,12 +14,14 @@ class GameMain {
 		Laya.MiniAdpter.init();
 		//程序入口
 		Laya.init(750, 1334, WebGL);
+		Laya.stage.screenMode = 'vertical';
 		Laya.stage.scaleMode = Laya.Stage.SCALE_FIXED_WIDTH;
 		//画布垂直居中对齐
 		Laya.stage.alignV = Laya.Stage.ALIGN_MIDDLE;
 		//画布水平居中对齐
 		Laya.stage.alignH = Laya.Stage.ALIGN_CENTER;
 		Laya.stage.bgColor = "gray";
+		
 		//激活资源版本控制
 		// Laya.ResourceVersion.enable("version.json", Handler.create(null, this.beginLoad), Laya.ResourceVersion.FILENAME_VERSION);
 		// this.beginLoad();

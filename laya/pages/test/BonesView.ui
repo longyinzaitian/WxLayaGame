@@ -1,9 +1,9 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":16,
-    "props":{"y":0,"x":0,"width":750,"sceneColor":"#666666","layoutEnabled":true,"height":1334},
+    "selectedBox":16,
+    "selecteID":18,
+    "props":{"y":0,"x":0,"width":750,"sceneColor":"#cccccc","layoutEnabled":true,"height":1334},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -15,20 +15,33 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"top":0,"skin":"second/bg.jpg","right":0,"left":0,"layoutEnabled":true,"bottom":0},
+            "props":{"top":0,"right":0,"left":0,"layoutEnabled":true,"bottom":0},
             "nodeParent":1,
             "label":"Image",
-            "isDirectory":false,
+            "isOpen":true,
+            "isDirectory":true,
             "isAniNode":true,
-            "hasChild":false,
+            "hasChild":true,
             "compId":16,
             "child":[
-                ]
+                {
+                    "x":30,
+                    "type":"Rect",
+                    "props":{"y":0,"x":0,"width":752,"lineWidth":1,"height":1624,"fillColor":"#cccccc"},
+                    "nodeParent":16,
+                    "label":"Rect",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":18,
+                    "child":[
+                        ]
+                }]
         },
         {
             "x":15,
             "type":"Button",
-            "props":{"width":88,"var":"mCloseBtn","top":0,"skin":"comp/btn_close.png","right":0,"layoutEnabled":true,"height":88},
+            "props":{"x":0,"width":120,"var":"mCloseBtn","top":0,"stateNum":"3","skin":"comp/btn_close.png","left":0,"layoutEnabled":true,"height":88},
             "nodeParent":1,
             "label":"Button(mCloseBtn)",
             "isDirectory":false,
@@ -53,7 +66,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":33,"x":75,"var":"mLoop","text":"循环：No","fontSize":35,"color":"#0c93ee"},
+                    "props":{"y":1,"x":45,"var":"mLoop","text":"循环：No","fontSize":35,"color":"#0c93ee"},
                     "nodeParent":3,
                     "label":"Label(mLoop)",
                     "isDirectory":false,
@@ -66,7 +79,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"width":600,"var":"mAnimLabel","text":"动画名称索引:","height":54,"fontSize":35,"color":"#09ee92","centerY":0,"centerX":0,"align":"left"},
+                    "props":{"width":600,"var":"mAnimLabel","text":"动画名称索引:","height":54,"fontSize":35,"color":"#023b24","centerY":-2,"centerX":-30,"align":"left"},
                     "nodeParent":3,
                     "label":"Label(mAnimLabel)",
                     "isOpen":true,
@@ -92,7 +105,7 @@
                         {
                             "x":45,
                             "type":"Label",
-                            "props":{"var":"mSleep","text":"睡觉","fontSize":40,"color":"#06ee3d","centerY":0,"bgColor":"#333333","align":"center"},
+                            "props":{"var":"mSleep","text":"睡觉","fontSize":40,"color":"#2f00ee","centerY":0,"align":"center"},
                             "nodeParent":5,
                             "label":"Label(mSleep)",
                             "isDirectory":false,
@@ -105,7 +118,7 @@
                         {
                             "x":45,
                             "type":"Label",
-                            "props":{"x":141,"var":"mStand","text":"站着","fontSize":40,"color":"#cd0f0c","centerY":0,"bgColor":"#333333"},
+                            "props":{"x":141,"var":"mStand","text":"站着","fontSize":40,"color":"#2f00ee","centerY":0},
                             "nodeParent":5,
                             "label":"Label(mStand)",
                             "isDirectory":false,
@@ -118,7 +131,7 @@
                         {
                             "x":45,
                             "type":"Label",
-                            "props":{"x":290,"var":"mWalk","text":"走路","fontSize":40,"color":"#2f00ee","centerY":0,"bgColor":"#333333"},
+                            "props":{"x":290,"var":"mWalk","text":"走路","fontSize":40,"color":"#2f00ee","centerY":0},
                             "nodeParent":5,
                             "label":"Label(mWalk)",
                             "isDirectory":false,
@@ -131,7 +144,7 @@
                         {
                             "x":45,
                             "type":"Label",
-                            "props":{"y":-537,"x":422,"var":"mEat","text":"吃吃","fontSize":40,"color":"#06ee47","centerY":0,"bgColor":"#333333"},
+                            "props":{"y":-537,"x":422,"var":"mEat","text":"吃吃","fontSize":40,"color":"#2f00ee","centerY":0},
                             "nodeParent":5,
                             "label":"Label(mEat)",
                             "isDirectory":false,
@@ -144,7 +157,7 @@
                         {
                             "x":45,
                             "type":"Label",
-                            "props":{"x":533,"var":"mRun","text":"跑路","fontSize":40,"color":"#06ee47","centerY":0,"bgColor":"#333333"},
+                            "props":{"x":533,"var":"mRun","text":"跑路","fontSize":40,"color":"#2f00ee","centerY":0},
                             "nodeParent":5,
                             "label":"Label(mRun)",
                             "isDirectory":false,
