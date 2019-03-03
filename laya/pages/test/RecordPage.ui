@@ -1,9 +1,9 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":11,
-    "props":{"width":750,"sceneColor":"#000000","height":1334},
+    "selectedBox":14,
+    "selecteID":15,
+    "props":{"width":750,"top":0,"sceneColor":"#000000","right":0,"left":0,"height":1334,"bottom":0},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -129,6 +129,58 @@
             "compId":11,
             "child":[
                 ]
+        },
+        {
+            "x":15,
+            "type":"Tab",
+            "props":{"var":"mTab","top":52,"selectedIndex":2,"centerX":65},
+            "nodeParent":1,
+            "label":"Tab(mTab)",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":14,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Button",
+                    "props":{"y":0,"x":0,"stateNum":"3","skin":"template/ButtonTab/btn_LargeTabButton_Left.png","name":"item0","labelSize":36,"labelColors":"#007AFF,#007AFF,#FFFFFF","label":"Button"},
+                    "nodeParent":14,
+                    "label":"Button(item0)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":15,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Button",
+                    "props":{"y":0,"x":200,"stateNum":"3","skin":"template/ButtonTab/btn_LargeTabButton_Middle.png","name":"item1","labelSize":36,"labelColors":"#007AFF,#007AFF,#FFFFFF","label":"Button"},
+                    "nodeParent":14,
+                    "label":"Button(item1)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":16,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Button",
+                    "props":{"y":0,"x":405,"stateNum":"3","skin":"template/ButtonTab/btn_LargeTabButton_Right.png","name":"item2","labelSize":36,"labelColors":"#007AFF,#007AFF,#FFFFFF","label":"Button"},
+                    "nodeParent":14,
+                    "label":"Button(item2)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":17,
+                    "child":[
+                        ]
+                }]
         }],
     "animations":[
         {

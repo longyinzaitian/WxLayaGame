@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":43,
-    "selecteID":44,
+    "selectedBox":1,
+    "selecteID":43,
     "props":{"width":750,"top":0,"sceneColor":"#ffffff","right":0,"left":0,"layoutEnabled":true,"height":1334,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -27,7 +27,7 @@
                 {
                     "x":30,
                     "type":"Rect",
-                    "props":{"width":750,"lineWidth":1,"height":1624,"fillColor":"#ffffff"},
+                    "props":{"width":750,"lineWidth":1,"height":1700,"fillColor":"#ffffff"},
                     "nodeParent":43,
                     "label":"Rect",
                     "isDirectory":false,

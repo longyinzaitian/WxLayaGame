@@ -17,6 +17,8 @@ class RecordPageUI extends ui.test.RecordPageUI {
         this.mRecordMgr.setRecorderHandler(Laya.Handler.create(this, this.onRecordError, null, false),
                                         Laya.Handler.create(this, this.onRecordStop, null, false));
         this.mAudioMgr = new WxAudioMgr(null, null);
+        this.mTab.selectedIndex = 2;
+        this.ajustUi();
     }
 
     private onStartEvent(): void {
@@ -51,5 +53,29 @@ class RecordPageUI extends ui.test.RecordPageUI {
 
     private onCloseBtn(): void {
         Laya.stage.removeChild(this);
+    }
+
+    private ajustUi(): void {
+        let h: number = this.getMobileHeight();
+        if (h > 1334) {
+            this.mTab.top += 80 * ((h-1334)/(1624-1334));
+        }
+    }
+
+    private getMobileHeight(): number {
+        if (!Laya.Browser.onWeiXin) {
+            return 1334;
+        }
+
+        let wxInfo = wx.getSystemInfoSync();
+        console.log('wx height:', wxInfo.windowHeight, ', widht:', wxInfo.windowWidth);
+        let h: number = 750 * wxInfo.windowHeight / wxInfo.windowWidth;
+        console.log('h:', h);
+        if (h > 1334) {
+            return h;
+        }
+
+        return 1334;
+
     }
 }
