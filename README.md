@@ -19,6 +19,7 @@
 >   具体操作，请参考博客：https://blog.csdn.net/u010156024/article/details/87906106
 
 6、Laya微信小游戏适配问题  
+> 一篇文章搞懂 Laya微信小游戏 适配问题.
 > 请参考博客： https://blog.csdn.net/u010156024/article/details/88088257
 
 ### 环境  
