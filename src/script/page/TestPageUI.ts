@@ -47,6 +47,24 @@ export default class TestPageUI  extends ui.test.TestPageSceneUI {
         this.check.selected = true;
 
         AudioMgr.playSound();
+        this.playAnim();
+    }
+
+    private anim: Laya.Animation;
+    private playAnim():void {
+        if (!this.anim) {
+            let ani: Laya.Animation = new Laya.Animation();
+            ani.loadAnimation("test/TestAni.ani");
+            ani.on(Laya.Event.COMPLETE, null, this.animComplete);
+            ani.pos(200, 300);
+            this.stage.addChild(ani);
+            this.anim = ani;
+        }
+        this.anim.play(0, false);
+    }
+
+    private animComplete(res): void {
+        console.log('anim complete.', res);
     }
 
     private onBtn2Click(): void {
@@ -66,7 +84,7 @@ export default class TestPageUI  extends ui.test.TestPageSceneUI {
         this.list.array = arr;
 
         //还可以自定义list渲染方式，可以打开下面注释看一下效果
-        this.list.renderHandler = new Handler(this, this.onListRender);
+        this.list.renderHandler = Laya.Handler.create(this, this.onListRender);
     }
 
     private onListRender(item: Laya.Box, index: number): void {

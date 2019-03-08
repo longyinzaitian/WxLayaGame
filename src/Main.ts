@@ -42,15 +42,14 @@ export default class Main {
 	onConfigLoaded(): void {
 		this.registerVisibleChange();
 		var resources = ["res/atlas/comp.atlas",
-						"res/atlas/second.atlas",
-						"res/atlas/roundpro.atlas",
-						"bones/Sheep_Ani.png"];
+			"res/atlas/test.atlas", "res/atlas/test.png",
+			"res/atlas/second.atlas",
+			"res/atlas/roundpro.atlas",
+			"bones/Sheep_Ani.png"];
 		Laya.loader.load(resources, Laya.Handler.create(this, this.onLoaded));
-		Laya.loader.load("bones/Sheep_Ani.sk",null,null,Loader.BUFFER);
+		Laya.loader.load("bones/Sheep_Ani.sk", null, null, Loader.BUFFER);
 
 		new StateMachineUtil();
-		//加载IDE指定的场景
-		// GameConfig.startScene && Laya.Scene.open(GameConfig.startScene, true);
 	}
 
 	private registerVisibleChange(): void {
@@ -59,7 +58,7 @@ export default class Main {
 			wx.onShow((res) => {
 				console.log('on show:', res);
 			});
-			
+
 			wx.onHide((res) => {
 				console.log('on hide');
 				new DownloadFileUtil('music').removeSavedFiles();
@@ -72,13 +71,16 @@ export default class Main {
 		Laya.Scene.open('test/IndexPageScene.scene');
 
 		EventDispatch.register("test_event", this, this.onEventTest);
+		EventDispatch.register("test_event", this, () => {
+			console.log('test event.');
+		});
 		this.testDispatchEvent();
 	}
 
 	// //测试Event事件顺序执行，非异步
 	private mTestHandler: Laya.Handler = Laya.Handler.create(this, this.onTestHandler, null, false);
 	private onEventTest(): void {
-		let level: number = Math.floor(Math.random()*10);
+		let level: number = Math.floor(Math.random() * 10);
 		this.mTestHandler.runWith([level]);
 	}
 
@@ -89,7 +91,7 @@ export default class Main {
 	private j: number;
 
 	private testDispatchEvent(): void {
-		for (let i=0; i<5; i++) {
+		for (let i = 0; i < 5; i++) {
 			this.j = i;
 			EventDispatch.event('test_event');
 		}

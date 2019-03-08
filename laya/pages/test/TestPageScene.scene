@@ -2,7 +2,7 @@
     "x":0,
     "type":"Scene",
     "selectedBox":4,
-    "selecteID":17,
+    "selecteID":13,
     "searchKey":"Scene",
     "props":{"width":750,"sceneColor":"#000000","runtime":"script/page/TestPageUI.ts","height":1334},
     "nodeParent":-1,
@@ -158,7 +158,7 @@
                     "x":30,
                     "type":"List",
                     "searchKey":"List,list",
-                    "props":{"y":68,"x":452,"width":128,"var":"list","vScrollBarSkin":"comp/vscroll.png","repeatX":1,"height":299},
+                    "props":{"y":74,"x":448,"width":129,"var":"list","vScrollBarSkin":"comp/vscroll.png","repeatX":1,"height":299,"elasticEnabled":true},
                     "nodeParent":4,
                     "label":"list",
                     "isOpen":true,
@@ -174,13 +174,14 @@
                             "props":{"y":0,"x":0,"width":112,"name":"render","height":30},
                             "nodeParent":13,
                             "label":"render",
-                            "isOpen":false,
+                            "isOpen":true,
                             "isDirectory":true,
                             "isAniNode":false,
                             "hasChild":true,
                             "compId":14,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":5,"x":26,"width":78,"text":"this is a list","skin":"comp/label.png","name":"label","height":20,"fontSize":14},
@@ -194,6 +195,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Clip",
                                     "searchKey":"Clip,clip",
                                     "props":{"y":2,"x":0,"skin":"comp/clip_num.png","name":"clip","clipX":10},

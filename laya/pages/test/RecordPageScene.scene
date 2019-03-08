@@ -1,7 +1,8 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":2,
+    "selectedBox":4,
+    "selecteID":12,
     "searchKey":"Scene",
     "props":{"width":750,"sceneColor":"#000000","runtime":"script/page/RecordPage.ts","height":1334},
     "nodeParent":-1,
@@ -101,7 +102,7 @@
                     "x":30,
                     "type":"TextInput",
                     "searchKey":"TextInput,mInputDuration",
-                    "props":{"y":333,"width":268,"var":"mInputDuration","text":"默认一分钟","skin":"comp/textinput.png","layoutEnabled":true,"height":45,"fontSize":35,"centerX":0},
+                    "props":{"y":333,"width":268,"var":"mInputDuration","valign":"middle","type":"text","text":"默认一分钟","skin":"comp/textinput.png","layoutEnabled":true,"height":45,"fontSize":35,"centerX":0,"align":"center"},
                     "nodeParent":4,
                     "label":"mInputDuration",
                     "isDirectory":false,
