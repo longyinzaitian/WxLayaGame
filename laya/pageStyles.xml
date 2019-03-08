@@ -1,0 +1,16 @@
+<page>
+   <item name="test/TestScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/ExpandPageScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/BonesView.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/ExpandPage.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/HumanView.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/IndexPage.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/RecordPage.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/RoundCircleProBarPage.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/TestPage.ui" props="" ifExport="分离模式" aName=""/>
+   <item name="test/BonesViewScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/IndexPageScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/RecordPageScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/RoundCircleProBarPageScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/TestPageScene.scene" props="" ifExport="分离模式" aName=""/>
+</page>
