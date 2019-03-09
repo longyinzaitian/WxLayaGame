@@ -6,7 +6,6 @@ export default class ViewPagerScene extends ui.test.ViewPageSceneUI {
     private static LEFT: string = 'left';
     private static RIGHT: string = 'right';
     private static MOVE_DUR: number = 300;
-    private static MOVE_MIN_DIS: number = 0;
     private static CONTAINER_LEFT_MAX: number = 35;
     private static CONTAINER_LEFT_MIN: number = -650;
     private static CONTAINER_MOVE_YU: number = Math.abs(ViewPagerScene.CONTAINER_LEFT_MIN)/5;
@@ -76,16 +75,13 @@ export default class ViewPagerScene extends ui.test.ViewPageSceneUI {
     }
 
     private onMouseXMove(mouseX: number): void {
-        Laya.Tween.clearTween(this.mContainer);
         let moveDis = mouseX - this._onMouseXDown;
         let containerLeft: number = this.mContainer.left;
         this._MoveDir = moveDis > 0 ? 1 : -1;
         containerLeft += moveDis;
         if (containerLeft >= ViewPagerScene.CONTAINER_LEFT_MAX + ViewPagerScene.CONTAINER_MOVE_YU && this._MoveDir == 1) {
-            // containerLeft = ViewPagerScene.CONTAINER_LEFT_MAX;
             containerLeft -= moveDis;
         } else if (containerLeft <= ViewPagerScene.CONTAINER_LEFT_MIN - ViewPagerScene.CONTAINER_MOVE_YU && this._MoveDir == -1) {
-            // containerLeft = ViewPagerScene.CONTAINER_LEFT_MIN;
             containerLeft -= moveDis;
         }
         this.mContainer.left = containerLeft;
@@ -114,7 +110,7 @@ export default class ViewPagerScene extends ui.test.ViewPageSceneUI {
     private moveToLeft(dur: number): void {
         this._dir = ViewPagerScene.LEFT;
         Laya.Tween.to(this.mContainer, {left: ViewPagerScene.CONTAINER_LEFT_MAX},
-            dur,
+            Math.abs(dur),
             Laya.Ease.linearNone,
             Laya.Handler.create(this, () => {
                 this.mContainer.left = ViewPagerScene.CONTAINER_LEFT_MAX;
@@ -125,7 +121,7 @@ export default class ViewPagerScene extends ui.test.ViewPageSceneUI {
     private moveToRight(dur: number): void {
         this._dir = ViewPagerScene.RIGHT;
         Laya.Tween.to(this.mContainer, {left: ViewPagerScene.CONTAINER_LEFT_MIN},
-            dur,
+            Math.abs(dur),
             Laya.Ease.linearNone,
             Laya.Handler.create(this, () => {
                 this.mContainer.left = ViewPagerScene.CONTAINER_LEFT_MIN;
