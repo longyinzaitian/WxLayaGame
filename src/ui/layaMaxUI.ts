@@ -48,6 +48,7 @@ export module ui.test {
 		public mRecordBtn:Laya.Label;
 		public mRoundCirclePage:Laya.Label;
 		public mExpandBtn:Laya.Label;
+		public mViewPagerBtn:Laya.Label;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();

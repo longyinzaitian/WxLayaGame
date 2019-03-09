@@ -8,7 +8,6 @@ export default class ExpandPageScene extends ui.test.ExpandPageSceneUI {
     }
 
     onEnable() {
-        console.log('ExpandPagesCENE . on eable.');
         this.init();
     }
 

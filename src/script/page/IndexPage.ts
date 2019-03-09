@@ -32,6 +32,10 @@ export default class IndexPage extends ui.test.IndexPageSceneUI {
         this.mExpandBtn.on(Laya.Event.CLICK, this, () => {
             this.openScence(INDEX_SCENE.EXPEND_PAGE);
         });
+
+        this.mViewPagerBtn.on(Laya.Event.CLICK, this, () => {
+            this.openScence(INDEX_SCENE.VIEW_PAGER_PAGE);
+        });
     }
 
     private openScence(sceneName: string): void {

@@ -7,6 +7,7 @@ import RoundCirclePage from "./script/page/RoundCirclePage"
 import TestPageUI from "./script/page/TestPageUI"
 import GameUI from "./script/GameUI"
 import GameControl from "./script/GameControl"
+import ViewPagerScene from "./script/page/ViewPagerScene"
 import Bullet from "./script/Bullet"
 import DropBox from "./script/DropBox"
 /*
@@ -36,6 +37,7 @@ export default class GameConfig{
         reg("script/page/TestPageUI.ts",TestPageUI);
         reg("script/GameUI.ts",GameUI);
         reg("script/GameControl.ts",GameControl);
+        reg("script/page/ViewPagerScene.ts",ViewPagerScene);
         reg("script/Bullet.ts",Bullet);
         reg("script/DropBox.ts",DropBox);
     }

@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":2,
-    "selecteID":11,
+    "selectedBox":3,
+    "selecteID":12,
     "searchKey":"Scene",
     "props":{"width":750,"sceneColor":"#000000","runtime":"script/page/IndexPage.ts","height":1334},
     "nodeParent":-1,
-    "maxID":12,
+    "maxID":13,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -140,6 +140,21 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":10,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,mViewPagerBtn",
+                    "props":{"x":225,"var":"mViewPagerBtn","top":440,"text":"ViewPager效果","layoutEnabled":true,"fontSize":50,"color":"#000000","centerX":0},
+                    "nodeParent":3,
+                    "label":"mViewPagerBtn",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":12,
                     "child":[
                         ]
                 }]
