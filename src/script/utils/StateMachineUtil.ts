@@ -2,8 +2,15 @@
 export default class StateMachineUtil {
     
     constructor() {
-        console.log('main -> state machine:', StateMachine);
-        this.init();
+        try {
+            if (undefined == StateMachine || !StateMachine) {
+                return;
+            }
+            console.log('main -> state machine:', StateMachine);
+            this.init();
+        } catch(err) {
+            console.log(err);
+        }
     }
 
     private init(): void {

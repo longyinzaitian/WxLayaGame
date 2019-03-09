@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":18,
-    "selecteID":17,
+    "selectedBox":2,
+    "selecteID":5,
     "searchKey":"Scene",
     "props":{"width":750,"sceneColor":"#000000","runtime":"script/page/ViewPagerScene.ts","height":1334},
     "nodeParent":-1,
-    "maxID":23,
+    "maxID":27,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -18,34 +18,22 @@
             "x":15,
             "type":"Image",
             "searchKey":"Image",
-            "props":{"top":0,"right":0,"left":0,"bottom":0},
+            "props":{"top":0,"skin":"second/bg.jpg","right":0,"left":0,"bottom":0},
             "nodeParent":2,
             "label":"Image",
-            "isOpen":false,
-            "isDirectory":true,
+            "isOpen":true,
+            "isDirectory":false,
             "isAniNode":true,
-            "hasChild":true,
+            "hasChild":false,
             "compId":3,
             "child":[
-                {
-                    "type":"Rect",
-                    "searchKey":"Rect",
-                    "props":{"width":750,"lineWidth":1,"height":1334,"fillColor":"#1a4da8"},
-                    "nodeParent":3,
-                    "label":"Rect",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":4,
-                    "child":[
-                        ]
-                }]
+                ]
         },
         {
             "x":15,
             "type":"Button",
             "searchKey":"Button,mCloseBtn",
-            "props":{"width":98,"var":"mCloseBtn","skin":"comp/btn_close.png","height":50},
+            "props":{"width":150,"var":"mCloseBtn","skin":"comp/btn_close.png","height":85},
             "nodeParent":2,
             "label":"mCloseBtn",
             "isDirectory":false,
@@ -114,7 +102,7 @@
                     "x":30,
                     "type":"Box",
                     "searchKey":"Box,mContainer",
-                    "props":{"width":1370,"var":"mContainer","left":35,"height":245,"centerY":58},
+                    "props":{"width":1370,"var":"mContainer","left":35,"height":245,"centerY":60},
                     "nodeParent":10,
                     "label":"mContainer",
                     "isOpen":true,
@@ -127,7 +115,7 @@
                             "x":45,
                             "type":"Box",
                             "searchKey":"Box,mBox1",
-                            "props":{"width":685,"var":"mBox1","top":0,"mouseThrough":true,"left":0,"height":245},
+                            "props":{"width":685,"var":"mBox1","top":0,"left":0,"bottom":0},
                             "nodeParent":18,
                             "label":"mBox1",
                             "isOpen":true,
@@ -140,7 +128,7 @@
                                     "x":60,
                                     "type":"Image",
                                     "searchKey":"Image",
-                                    "props":{"skin":"comp/image.png"},
+                                    "props":{"y":0,"top":0,"skin":"comp/image.png","centerX":0},
                                     "nodeParent":15,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -149,13 +137,27 @@
                                     "compId":19,
                                     "child":[
                                         ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "searchKey":"Label",
+                                    "props":{"y":97,"x":86,"text":"页面一","fontSize":56},
+                                    "nodeParent":15,
+                                    "label":"Label",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":25,
+                                    "child":[
+                                        ]
                                 }]
                         },
                         {
                             "x":45,
                             "type":"Box",
                             "searchKey":"Box,mBox2",
-                            "props":{"width":685,"var":"mBox2","top":0,"mouseThrough":true,"left":685,"height":245},
+                            "props":{"width":685,"var":"mBox2","top":0,"left":685,"height":245},
                             "nodeParent":18,
                             "label":"mBox2",
                             "isOpen":true,
@@ -167,10 +169,10 @@
                                 {
                                     "x":60,
                                     "type":"List",
-                                    "searchKey":"List",
-                                    "props":{"width":300,"vScrollBarSkin":"comp/vscroll.png","top":0,"repeatX":1,"renderType":"render","elasticEnabled":true,"centerX":0,"bottom":0},
+                                    "searchKey":"List,mList",
+                                    "props":{"width":300,"visible":false,"var":"mList","vScrollBarSkin":"comp/vscroll.png","top":0,"repeatX":1,"renderType":"render","elasticEnabled":true,"centerX":0,"bottom":0},
                                     "nodeParent":17,
-                                    "label":"List",
+                                    "label":"mList",
                                     "isOpen":true,
                                     "isDirectory":true,
                                     "isAniNode":true,
@@ -179,9 +181,23 @@
                                     "child":[
                                         {
                                             "x":75,
+                                            "type":"VScrollBar",
+                                            "searchKey":"VScrollBar,scrollBar",
+                                            "props":{"top":0,"skin":"comp/vscroll.png","right":0,"name":"scrollBar","bottom":0},
+                                            "nodeParent":20,
+                                            "label":"scrollBar",
+                                            "isDirectory":false,
+                                            "isAniNode":false,
+                                            "hasChild":false,
+                                            "compId":23,
+                                            "child":[
+                                                ]
+                                        },
+                                        {
+                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box,render",
-                                            "props":{"name":"render","height":50},
+                                            "props":{"width":245,"name":"render","height":50},
                                             "nodeParent":20,
                                             "label":"render",
                                             "isOpen":true,
@@ -204,7 +220,36 @@
                                                     "child":[
                                                         ]
                                                 }]
-                                        }]
+                                        }],
+                                    "$HIDDEN":true
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Image",
+                                    "searchKey":"Image",
+                                    "props":{"skin":"comp/image.png","centerX":0},
+                                    "nodeParent":17,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":24,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "searchKey":"Label",
+                                    "props":{"y":81,"x":74,"text":"页面二","fontSize":56},
+                                    "nodeParent":17,
+                                    "label":"Label",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":26,
+                                    "child":[
+                                        ]
                                 }]
                         }]
                 }]

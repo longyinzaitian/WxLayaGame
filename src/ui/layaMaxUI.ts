@@ -117,6 +117,7 @@ export module ui.test {
 		public mContainer:Laya.Box;
 		public mBox1:Laya.Box;
 		public mBox2:Laya.Box;
+		public mList:Laya.List;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();
