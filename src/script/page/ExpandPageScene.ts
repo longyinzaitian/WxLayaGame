@@ -1,5 +1,6 @@
 import { ui } from "../../ui/layaMaxUI";
 import GameScript from "../GameScript";
+import { INDEX_SCENE } from "../utils/Consts";
 
 export default class ExpandPageScene extends ui.test.ExpandPageSceneUI {
     constructor() {
@@ -26,6 +27,6 @@ export default class ExpandPageScene extends ui.test.ExpandPageSceneUI {
     }
 
     private onCloseClick(): void{
-        Laya.Scene.close('test/ExpandPageScene.scene');
+        Laya.Scene.close(INDEX_SCENE.EXPEND_PAGE);
     }
 }

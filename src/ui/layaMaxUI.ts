@@ -109,4 +109,18 @@ export module ui.test {
         }
     }
     REG("ui.test.TestSceneUI",TestSceneUI);
+    export class ViewPageSceneUI extends Laya.Scene {
+		public mCloseBtn:Laya.Button;
+		public mBtnFirst:Laya.Button;
+		public mBtnSecond:Laya.Button;
+		public mContainer:Laya.Box;
+		public mBox1:Laya.Box;
+		public mBox2:Laya.Box;
+        constructor(){ super()}
+        createChildren():void {
+            super.createChildren();
+            this.loadScene("test/ViewPageScene");
+        }
+    }
+    REG("ui.test.ViewPageSceneUI",ViewPageSceneUI);
 }

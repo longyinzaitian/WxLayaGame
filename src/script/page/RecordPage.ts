@@ -1,6 +1,7 @@
 import { ui } from "../../ui/layaMaxUI";
 import WxAudioMgr from "../utils/WxAudioMgr";
 import RecordMgr from "../utils/RecordMgr";
+import { INDEX_SCENE } from "../utils/Consts";
 
 export default class RecordPageUI extends ui.test.RecordPageSceneUI {
 
@@ -59,7 +60,7 @@ export default class RecordPageUI extends ui.test.RecordPageSceneUI {
     }
 
     private onCloseBtn(): void {
-        Laya.Scene.close('test/RecordpageScene.scene');
+        Laya.Scene.close(INDEX_SCENE.RECORD_PAGE);
     }
 
     private ajustUi(): void {

@@ -5,6 +5,7 @@ import RecordPageUI from "./RecordPage";
 import RoundCirclePage from "./RoundCirclePage";
 import { ui } from "../../ui/layaMaxUI";
 import ExpandPageScene from "./ExpandPageScene";
+import { INDEX_SCENE } from "../utils/Consts";
 
 export default class IndexPage extends ui.test.IndexPageSceneUI {
     constructor() {
@@ -13,24 +14,28 @@ export default class IndexPage extends ui.test.IndexPageSceneUI {
 
     onEnable() {
         this.mTestBtn.on(Laya.Event.CLICK, this, () => {
-            Laya.Scene.open('test/TestPageScene.scene', false);
+            this.openScence(INDEX_SCENE.TEST_PAGE);
         });
 
         this.mBonesBtn.on(Laya.Event.CLICK, this, () => {
-            Laya.Scene.open('test/BonesViewScene.scene', false);
+            this.openScence(INDEX_SCENE.BONES_PAGE);
         });
 
         this.mRecordBtn.on(Laya.Event.CLICK, this, () => {
-            Laya.Scene.open('test/RecordpageScene.scene', false);
+            this.openScence(INDEX_SCENE.RECORD_PAGE);
         });
 
         this.mRoundCirclePage.on(Laya.Event.CLICK, this, () => {
-            Laya.Scene.open('test/RoundCircleProBarPageScene.scene', false);
+            this.openScence(INDEX_SCENE.ROUND_CIRCLE_PAGE);
         });
 
         this.mExpandBtn.on(Laya.Event.CLICK, this, () => {
-            Laya.Scene.open('test/ExpandPageScene.scene', false);
+            this.openScence(INDEX_SCENE.EXPEND_PAGE);
         });
+    }
+
+    private openScence(sceneName: string): void {
+        Laya.Scene.open(sceneName, false);
     }
 
 }

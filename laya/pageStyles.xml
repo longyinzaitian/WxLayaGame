@@ -13,4 +13,5 @@
    <item name="test/RecordPageScene.scene" props="" ifExport="分离模式" aName=""/>
    <item name="test/RoundCircleProBarPageScene.scene" props="" ifExport="分离模式" aName=""/>
    <item name="test/TestPageScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test/ViewPageScene.scene" props="" ifExport="分离模式" aName=""/>
 </page>

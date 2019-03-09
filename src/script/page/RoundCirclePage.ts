@@ -1,4 +1,5 @@
 import { ui } from "../../ui/layaMaxUI";
+import { INDEX_SCENE } from "../utils/Consts";
 
 export default class RoundCirclePage extends ui.test.RoundCircleProBarPageSceneUI {
     constructor() {
@@ -17,6 +18,6 @@ export default class RoundCirclePage extends ui.test.RoundCircleProBarPageSceneU
     }
 
     private onClose(): void {
-        Laya.Scene.close('test/RoundCircleProBarPageScene.scene');
+        Laya.Scene.close(INDEX_SCENE.ROUND_CIRCLE_PAGE);
     }
 }

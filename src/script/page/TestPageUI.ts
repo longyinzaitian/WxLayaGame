@@ -2,6 +2,7 @@ import Label = Laya.Label;
 import Handler = Laya.Handler;
 import { ui } from "../../ui/layaMaxUI";
 import AudioMgr from "../utils/AudioMgr";
+import { INDEX_SCENE } from "../utils/Consts";
 
 export default class TestPageUI  extends ui.test.TestPageSceneUI {
     constructor() {
@@ -29,7 +30,7 @@ export default class TestPageUI  extends ui.test.TestPageSceneUI {
     }
 
     private onCloseBtn(): void {
-        Laya.Scene.close('test/TestPageScene.scene');
+        Laya.Scene.close(INDEX_SCENE.TEST_PAGE);
     }
 
     private onRadioGroupChange(event) : void {

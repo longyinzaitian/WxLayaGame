@@ -1,5 +1,6 @@
 import { ui } from "../../ui/layaMaxUI";
 import Main from "../../Main";
+import { INDEX_SCENE } from "../utils/Consts";
 
 export default class BonesPageUI extends ui.test.BonesViewSceneUI {
     private static BODY = 'body';
@@ -118,7 +119,7 @@ export default class BonesPageUI extends ui.test.BonesViewSceneUI {
         });
         this.mCloseBtn.on(Laya.Event.CLICK, this, () => {
             this.skeleton.stop();
-            Laya.Scene.close('test/BonesViewScene.scene');
+            Laya.Scene.close(INDEX_SCENE.BONES_PAGE);
         });
         this.mChangeSkin.on(Laya.Event.CLICK, this, this.changeSkin);
         this.mchangeHair.on(Laya.Event.CLICK, this, this.changeHairSkin);
