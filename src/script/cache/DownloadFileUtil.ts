@@ -103,4 +103,23 @@ export default class DownloadFileUtil {
             }
         });
     }
+
+    public unlinkSavedFile(filePath: string, removeFileSucHandler?: Laya.Handler,
+                                    removeFileFailHandler?: Laya.Handler): void {
+        this.mFileMgr.unlink({
+            filePath: filePath,
+            success: (res) => {
+                console.log('remove save file. suc:', res);
+                if (removeFileSucHandler) {
+                    removeFileSucHandler.run();
+                }
+            },
+            fail: (res) => {
+                console.log('remove save file. fail:', res);
+                if (removeFileFailHandler) {
+                    removeFileFailHandler.run();
+                }
+            }
+        });
+    }
 }
