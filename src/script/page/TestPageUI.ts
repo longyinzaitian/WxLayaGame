@@ -27,6 +27,8 @@ export default class TestPageUI  extends ui.test.TestPageSceneUI {
                 }
             });
         }
+
+        this.setBitmapFont();
     }
 
     private onCloseBtn(): void {
@@ -96,5 +98,33 @@ export default class TestPageUI  extends ui.test.TestPageSceneUI {
         } else {
             label.color = "#000000";
         }
+    }
+
+    // 使用位图字体
+    private mFontName:string = "diyFont";
+    private bitmapFont: Laya.BitmapFont;
+    private setBitmapFont(): void {
+        this.bitmapFont = new Laya.BitmapFont();
+        this.bitmapFont.loadFont("res/font_add/font_num.fnt",new Laya.Handler(this,this.onLoaded));
+        
+    }
+
+    private onLoaded(): void {
+        this.bitmapFont.autoScaleSize = true;
+        Laya.Text.registerBitmapFont(this.mFontName, this.bitmapFont);
+        var txt = this.mText;
+        txt.text = "09876652134";
+        //设置宽度，高度自动匹配
+        txt.width = 750;
+        //自动换行
+        txt.wordWrap = true;
+        txt.align = "left";
+        //使用我们注册的字体
+        txt.font = this.mFontName;
+        txt.fontSize = 10;
+        txt.leading = 5;
+
+        this.mLabel.font = this.mFontName;
+        this.mLabel.fontSize = 24;
     }
 }

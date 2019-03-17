@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":4,
-    "selecteID":13,
+    "selectedBox":30,
+    "selecteID":37,
     "searchKey":"Scene",
     "props":{"width":750,"sceneColor":"#000000","runtime":"script/page/TestPageUI.ts","height":1334},
     "nodeParent":-1,
-    "maxID":30,
+    "maxID":38,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -49,14 +49,13 @@
             "props":{"y":10,"x":10,"width":600,"height":400,"centerY":0,"centerX":0},
             "nodeParent":2,
             "label":"Box",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":4,
             "child":[
                 {
-                    "x":30,
                     "type":"Image",
                     "searchKey":"Image",
                     "props":{"y":0,"x":0,"top":0,"skin":"comp/bg.png","sizeGrid":"30,4,4,4","right":0,"left":0,"layoutEnabled":true,"bottom":0},
@@ -71,7 +70,6 @@
                     "$LOCKED":false
                 },
                 {
-                    "x":30,
                     "type":"Button",
                     "searchKey":"Button,btn",
                     "props":{"y":56,"x":41,"width":150,"var":"btn","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"点我赋值","height":37},
@@ -85,7 +83,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Clip",
                     "searchKey":"Clip,clip",
                     "props":{"y":56,"x":401,"var":"clip","skin":"comp/clip_num.png","clipX":10},
@@ -99,7 +96,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"ComboBox",
                     "searchKey":"ComboBox,combobox",
                     "props":{"y":143,"x":220,"width":200,"var":"combobox","skin":"comp/combobox.png","sizeGrid":"4,20,4,4","selectedIndex":1,"labels":"select1,select2,selecte3","height":23},
@@ -113,7 +109,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Tab",
                     "searchKey":"Tab,tab",
                     "props":{"y":96,"x":220,"var":"tab","skin":"comp/tab.png","labels":"tab1,tab2,tab3"},
@@ -127,7 +122,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"VScrollBar",
                     "searchKey":"VScrollBar",
                     "props":{"y":223,"x":259,"skin":"comp/vscroll.png","height":150},
@@ -141,7 +135,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"VSlider",
                     "searchKey":"VSlider",
                     "props":{"y":223,"x":224,"skin":"comp/vslider.png","height":150},
@@ -155,7 +148,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"List",
                     "searchKey":"List,list",
                     "props":{"y":74,"x":448,"width":129,"var":"list","vScrollBarSkin":"comp/vscroll.png","repeatX":1,"height":299,"elasticEnabled":true},
@@ -168,7 +160,6 @@
                     "compId":13,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,render",
                             "props":{"y":0,"x":0,"width":112,"name":"render","height":30},
@@ -181,7 +172,6 @@
                             "compId":14,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":5,"x":26,"width":78,"text":"this is a list","skin":"comp/label.png","name":"label","height":20,"fontSize":14},
@@ -195,7 +185,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Clip",
                                     "searchKey":"Clip,clip",
                                     "props":{"y":2,"x":0,"skin":"comp/clip_num.png","name":"clip","clipX":10},
@@ -211,7 +200,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Button",
                     "searchKey":"Button,close,closeBtn",
                     "props":{"y":4,"x":563,"var":"closeBtn","stateNum":"3","skin":"comp/btn_close.png","name":"close"},
@@ -225,7 +213,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Button",
                     "searchKey":"Button,btn2",
                     "props":{"y":112,"x":41,"width":150,"var":"btn2","skin":"comp/button.png","sizeGrid":"4,4,4,4","labelSize":30,"labelBold":true,"label":"点我赋值","height":66},
@@ -239,7 +226,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"CheckBox",
                     "searchKey":"CheckBox,check",
                     "props":{"y":188,"x":220,"var":"check","skin":"comp/checkbox.png","label":"checkBox1"},
@@ -253,7 +239,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"RadioGroup",
                     "searchKey":"RadioGroup,radio",
                     "props":{"y":61,"x":220,"var":"radio","skin":"comp/radiogroup.png","labels":"radio1,radio2,radio3"},
@@ -267,7 +252,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Panel",
                     "searchKey":"Panel",
                     "props":{"y":223,"x":299,"width":127,"vScrollBarSkin":"comp/vscroll.png","height":150},
@@ -280,7 +264,6 @@
                     "compId":21,
                     "child":[
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image",
                             "props":{"skin":"comp/image.png"},
@@ -295,7 +278,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"CheckBox",
                     "searchKey":"CheckBox",
                     "props":{"y":188,"x":326,"skin":"comp/checkbox.png","labelColors":"#ff0000","label":"checkBox2"},
@@ -309,7 +291,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Box",
                     "searchKey":"Box,box",
                     "props":{"y":197,"x":41,"var":"box"},
@@ -322,7 +303,6 @@
                     "compId":24,
                     "child":[
                         {
-                            "x":45,
                             "type":"ProgressBar",
                             "searchKey":"ProgressBar,progress",
                             "props":{"y":70,"width":150,"skin":"comp/progress.png","sizeGrid":"4,4,4,4","name":"progress","height":14},
@@ -336,7 +316,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,label",
                             "props":{"y":103,"width":137,"text":"This is a Label","skin":"comp/label.png","name":"label","height":26,"fontSize":20},
@@ -350,7 +329,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"TextInput",
                             "searchKey":"TextInput,input",
                             "props":{"y":148,"width":150,"text":"textinput","skin":"comp/textinput.png","name":"input"},
@@ -364,7 +342,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"HSlider",
                             "searchKey":"HSlider,slider",
                             "props":{"width":150,"skin":"comp/hslider.png","name":"slider"},
@@ -378,7 +355,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"HScrollBar",
                             "searchKey":"HScrollBar,scroll",
                             "props":{"y":34,"width":150,"skin":"comp/hscroll.png","name":"scroll"},
@@ -391,6 +367,76 @@
                             "child":[
                                 ]
                         }]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Box",
+            "searchKey":"Box,mFontBox",
+            "props":{"width":300,"var":"mFontBox","top":100,"height":200,"centerX":0},
+            "nodeParent":2,
+            "label":"mFontBox",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":30,
+            "child":[
+                {
+                    "x":30,
+                    "type":"FontClip",
+                    "searchKey":"FontClip",
+                    "props":{"value":"0123456789","skin":"comp/clip_num.png","sheet":"0123456789"},
+                    "nodeParent":30,
+                    "label":"FontClip",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":33,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Clip",
+                    "searchKey":"Clip",
+                    "props":{"y":52,"x":0,"skin":"comp/clip_num.png","index":4,"clipX":5,"clipWidth":24},
+                    "nodeParent":30,
+                    "label":"Clip",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":34,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "searchKey":"Text,mText",
+                    "props":{"y":116,"x":0,"var":"mText","text":"334","fontSize":55,"font":"font_num"},
+                    "nodeParent":30,
+                    "label":"mText",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":36,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,mLabel",
+                    "props":{"y":234,"x":10,"width":143,"var":"mLabel","text":"223","height":61,"fontSize":55,"font":"font_num"},
+                    "nodeParent":30,
+                    "label":"mLabel",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":37,
+                    "child":[
+                        ]
                 }]
         }],
     "animations":[

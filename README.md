@@ -33,6 +33,9 @@
 > 文章提供一种ViewPager的页面切换效果，支持按钮切换和手指滑动切换  
 > 博客地址：https://blog.csdn.net/u010156024/article/details/88374131
 
+10、Laya的位图字体bitmapFont字体用法  
+> 手把手一步步教你制作和使用位图字体  
+> 博客地址： https://blog.csdn.net/u010156024/article/details/88620229  
   
   
 &nbsp;

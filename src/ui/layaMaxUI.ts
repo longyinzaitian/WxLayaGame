@@ -93,6 +93,9 @@ export module ui.test {
 		public check:Laya.CheckBox;
 		public radio:Laya.RadioGroup;
 		public box:Laya.Box;
+		public mFontBox:Laya.Box;
+		public mText:laya.display.Text;
+		public mLabel:Laya.Label;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();
