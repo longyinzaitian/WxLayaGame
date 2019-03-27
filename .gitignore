@@ -3,6 +3,8 @@ dist
 .DS_Store
 bin/*
 !bin/index.html
+!bin/index.js
+!bin/version.json
 !bin/state-machine.min.js
 .laya/chrome/*
 .laya/release/*
