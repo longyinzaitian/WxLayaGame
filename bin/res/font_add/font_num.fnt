@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<font>
+  <info face="Microsoft YaHei UI" size="32" bold="0" italic="0" charset="" unicode="1" stretchH="2000" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1" outline="10"/>
+  <common lineHeight="640" base="520" scaleW="512" scaleH="256" pages="1" packed="0" alphaChnl="1" redChnl="0" greenChnl="0" blueChnl="0"/>
+  <pages>
+    <page id="0" file="font_num_0.png" />
+  </pages>
+  <chars count="10">
+    <char id="48" x="0" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="49" x="66" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="50" x="132" y="86" width="64" height="85" xoffset="0" yoffset="0" xadvance="64" page="0" chnl="15" />
+    <char id="51" x="132" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="52" x="198" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="53" x="264" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="54" x="330" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="55" x="396" y="0" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="56" x="0" y="86" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+    <char id="57" x="66" y="86" width="65" height="85" xoffset="0" yoffset="0" xadvance="65" page="0" chnl="15" />
+  </chars>
+</font>
