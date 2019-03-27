@@ -42,8 +42,26 @@
 ### 环境  
   
 Laya.2.0.1beta版本  
+
+
+&nbsp;
+
+### 运行 
+
+第一步：  
+![设置类库](https://github.com/longyinzaitian/WxLayaGame/blob/master/art/2.png)
+
+项目-> 类库管理 -> 选择2.0以上版本类库，点击应用   
+
+第二步：  
+![清理并导出](https://github.com/longyinzaitian/WxLayaGame/blob/master/art/1.png)
+
+切换至UI编辑， 导出-> 刷新资源及页面， 然后，导出-> 清理并导出   
+    
   
-编译->发布  即可使用微信开发工具打开运行  
+编译->发布  即可使用微信开发工具打开运行    
+  
+编译，直接使用Chrome浏览器打开运行  
 
 
 &nbsp;
