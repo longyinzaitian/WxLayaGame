@@ -5,6 +5,9 @@ bin/*
 !bin/index.html
 !bin/index.js
 !bin/version.json
+!bin/res/font_add
+!bin/res/font_add/font_num.fnt
+!bin/res/font_add/font_num.png
 !bin/state-machine.min.js
 .laya/chrome/*
 .laya/release/*
