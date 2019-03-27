@@ -4,8 +4,5 @@ dist
 bin/*
 !bin/index.html
 !bin/state-machine.min.js
-libs/*
-libs
-!libs/MWx.d.ts
 .laya/chrome/*
 .laya/release/*
